@@ -1,0 +1,19 @@
+.parent div{
+    height: 200px;
+    width: 200px;
+    background-color: purple;
+    align-items: flex-start;
+    color: white;
+    font-size: 35px;
+}
+
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px; 
+    align-items: flex-start;
+    width: 100%;
+-ms-flex-align: end;
+    flex-direction: row;
+    margin: 
+}

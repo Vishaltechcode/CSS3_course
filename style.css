@@ -1,0 +1,228 @@
+/*h1 {
+    color: red;
+    margin: 10px 20px 30px;
+    border: 3px solid orange;
+    padding: 10px;
+}
+
+.mytitle {
+color: green;
+}
+
+div{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+    background-color: green;
+}
+.one {
+    position:fixed;
+    left:300px;
+}
+.two {
+    position:absolute;
+    left: 600px;
+}
+.three {
+    position:relative;
+    left: 700px;
+}
+.four {
+    position:static;
+    left: 700px;
+}
+.parent{
+    height: 600px;
+    width: 600px;
+    background-color: brown;
+    margin-left: 35%;
+    position: relative;
+}
+.parent div {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    position: absolute;
+    
+}
+
+.parent div:nth-child(2){
+   
+    right:0;
+    top:0;
+    
+}
+.parent div:nth-child(3){
+    
+    right:0;
+    bottom:0;
+    
+}
+.parent div:nth-child(4){
+    
+    left:0;
+    bottom:0;
+    
+}
+.parent div:nth-child(5){
+    
+    margin: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+    
+} 
+
+.ztest div{
+    height: 150px;
+    width: 110px;
+    margin: 20px;
+    background-color: green;
+    position: relative;
+z-index:999;
+
+}
+
+.ztest div:nth-child(2){
+    background-color: yellow;
+    margin-top:-70px;
+    margin-left:20px;
+z-index:99;
+}
+.ztest div:nth-child(3){
+    background-color: purple;
+    margin-top:-60px;
+    margin-left:100px;
+z-index:9;
+}
+.ztest div:nth-child(4){
+    background-color: orange;
+}
+
+body{
+    opacity:0.7;
+} 
+
+.parent div{
+    height: 140px;
+    width: 140px;
+    margin: 20px;
+    background-color: rgb(40,70,8);
+    color: white;
+}
+
+.parent div:nth-child(2){
+visibility: hidden;
+}  */
+/*
+h1{
+    font-size: 20px;
+    margin-left:30%;
+}
+
+@media screen and (min-width:1024px){
+    body {
+        background-color: green;
+    }
+    h1,h2,h3,h4,h5{
+        display: none;
+    }
+}
+@media screen and (min-width:768px)
+              and (max-width:1028x)
+              and (orientation:potrait)
+{
+    body {
+        background-color: purple;
+    }
+    h3,h4,h5,h1{
+display: none;
+    }
+}*/
+/*
+div {
+    height:100px;
+    width:100px;
+    background-color: green;
+    position: relative;
+    animation-name: demoanimation;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+
+@keyframes demoanimation{
+    10% {
+left: 20%;
+background-color: green;
+
+    }
+    30% {
+left: 40%;
+background-color: red;
+
+    }
+    50% {
+left: 60%;
+background-color: blue;
+
+    }
+    70% {
+left: 80%;
+background-color: black;
+
+    }
+    90% {
+left: 100%;
+background-color: purple;
+
+    }
+    90% {
+left: 70%;
+background-color: orange;
+
+    }
+    100% {
+left: 100%;
+background-color: white;
+
+    }
+}
+*/
+body {
+    display: grid;
+    place-content: center;
+}
+.heart {
+    width: 30px;
+    height: 30px;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 47%;
+}
+
+.heart::after { 
+    animation: testanimation 1000ms cubic-bezier(0.9,0.7,0.5,0.9) infinite;
+}
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left:0%;
+    background-color: blueviolet;
+    border-radius: 50%;
+    z-index: -1;
+
+}
+@keyframes testanimation {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        transform: scale(1.4);
+        opacity: 0.4;
+    }
+}
